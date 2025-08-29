@@ -8,35 +8,59 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 50 20% 97%;
+    --foreground: 25 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 85% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 120 30% 92%;
+    --secondary-foreground: 25 20% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 25% 95%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 120 40% 88%;
+    --accent-foreground: 25 20% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 88%;
+    --input: 45 20% 92%;
+    --ring: 25 85% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom food theme colors */
+    --saffron: 25 85% 55%;
+    --saffron-light: 25 70% 85%;
+    --saffron-dark: 25 90% 45%;
+    
+    --fresh-green: 120 40% 50%;
+    --fresh-green-light: 120 30% 85%;
+    
+    --warm-brown: 25 35% 25%;
+    --cream: 45 40% 95%;
+    
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--saffron-dark)));
+    --gradient-fresh: linear-gradient(135deg, hsl(var(--fresh-green)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--saffron-light)), hsl(var(--cream)));
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--saffron) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--warm-brown) / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 

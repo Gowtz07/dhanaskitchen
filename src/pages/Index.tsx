@@ -1,12 +1,81 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useRef } from 'react';
+import { Header } from '@/components/Header';
+import { HeroSection } from '@/components/HeroSection';
+import { MenuSection } from '@/components/MenuSection';
+import { CartSheet } from '@/components/CartSheet';
+import { DishDetailsModal } from '@/components/DishDetailsModal';
+import { Footer } from '@/components/Footer';
+import { useCart } from '@/hooks/useCart';
+import { Dish } from '@/types/menu';
 
 const Index = () => {
+  const {
+    cartItems,
+    addToCart,
+    removeFromCart,
+    updateQuantity,
+    updateSpiceLevel,
+    clearCart,
+    getTotalPrice,
+    getTotalItems,
+  } = useCart();
+
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [selectedDish, setSelectedDish] = useState<Dish | null>(null);
+  const menuRef = useRef<HTMLElement>(null);
+
+  const handleOrderNow = () => {
+    menuRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleViewDetails = (dish: Dish) => {
+    setSelectedDish(dish);
+  };
+
+  const handleCloseDetails = () => {
+    setSelectedDish(null);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <Header 
+        cartItemCount={getTotalItems()}
+        onCartClick={() => setIsCartOpen(true)}
+      />
+
+      {/* Hero Section */}
+      <HeroSection onOrderNow={handleOrderNow} />
+
+      {/* Menu Section */}
+      <MenuSection
+        ref={menuRef}
+        onAddToCart={addToCart}
+        onViewDetails={handleViewDetails}
+      />
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Cart Sheet */}
+      <CartSheet
+        isOpen={isCartOpen}
+        onClose={() => setIsCartOpen(false)}
+        cartItems={cartItems}
+        totalPrice={getTotalPrice()}
+        onUpdateQuantity={updateQuantity}
+        onUpdateSpiceLevel={updateSpiceLevel}
+        onRemoveItem={removeFromCart}
+        onClearCart={clearCart}
+      />
+
+      {/* Dish Details Modal */}
+      <DishDetailsModal
+        dish={selectedDish}
+        isOpen={!!selectedDish}
+        onClose={handleCloseDetails}
+        onAddToCart={addToCart}
+      />
     </div>
   );
 };

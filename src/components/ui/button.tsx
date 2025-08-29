@@ -18,6 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        saffron: "bg-gradient-warm text-white hover:shadow-warm transform hover:scale-105 transition-smooth",
+        fresh: "bg-gradient-fresh text-white hover:opacity-90 transition-smooth",
+        order: "bg-saffron text-white hover:bg-saffron-dark shadow-warm hover:shadow-lg transform hover:scale-105 transition-bounce font-semibold",
+        cart: "bg-fresh-green text-white hover:bg-fresh-green/90 transition-smooth",
       },
       size: {
         default: "h-10 px-4 py-2",

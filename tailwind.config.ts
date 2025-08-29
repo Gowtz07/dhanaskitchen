@@ -24,6 +24,17 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				saffron: {
+					DEFAULT: 'hsl(var(--saffron))',
+					light: 'hsl(var(--saffron-light))',
+					dark: 'hsl(var(--saffron-dark))'
+				},
+				'fresh-green': {
+					DEFAULT: 'hsl(var(--fresh-green))',
+					light: 'hsl(var(--fresh-green-light))'
+				},
+				'warm-brown': 'hsl(var(--warm-brown))',
+				cream: 'hsl(var(--cream))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -88,7 +99,22 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+			},
+			backgroundImage: {
+				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-fresh': 'var(--gradient-fresh)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'warm': 'var(--shadow-warm)',
+				'card': 'var(--shadow-card)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			}
 		}
 	},
