@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { Phone, MapPin, Clock, MessageCircle, UtensilsCrossed } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const Footer = () => {
@@ -9,8 +9,8 @@ export const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-warm rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">D</span>
+              <div className="w-10 h-10 rounded-full bg-gradient-warm shadow-warm flex items-center justify-center">
+                <UtensilsCrossed className="h-5 w-5 text-white" aria-label="Kitchen utensils logo" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Dhana's Home Food</h3>
@@ -65,42 +65,39 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Our Specialties</h4>
-            <div className="space-y-2 text-sm">
-              <div className="text-gray-300">🍛 Traditional Rice Varieties</div>
-              <div className="text-gray-300">🍲 Authentic Gravies & Curries</div>
-              <div className="text-gray-300">🥘 Fresh Vegetable Preparations</div>
-              <div className="text-gray-300">🥞 South Indian Breakfast Items</div>
-              <div className="text-gray-300">🍽️ Complete Traditional Meals</div>
-            </div>
-            
-            <div className="pt-4">
-              <h5 className="font-semibold text-sm mb-2">Why Choose Us?</h5>
-              <div className="space-y-1 text-xs text-gray-300">
-                <div>✅ Home-style authentic cooking</div>
-                <div>✅ Customizable spice levels</div>
-                <div>✅ Fresh ingredients daily</div>
-                <div>✅ Flexible quantity options</div>
-                <div>✅ WhatsApp ordering convenience</div>
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold">What we serve</h4>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Traditional Rice Varieties</span>
+                <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Authentic Gravies & Curries</span>
+                <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Fresh Vegetable Preparations</span>
+                <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">South Indian Breakfast</span>
+                <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Complete Traditional Meals</span>
+              </div>
+              <div className="pt-2">
+                <h5 className="font-semibold text-sm mb-2">Why choose us</h5>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Home-style authentic cooking</span>
+                  <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Customizable spice levels</span>
+                  <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Fresh ingredients daily</span>
+                  <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Flexible quantities</span>
+                  <span className="px-2 py-1 rounded-full bg-white/10 text-white/90 text-xs">Easy WhatsApp ordering</span>
+                </div>
               </div>
             </div>
-          </div>
         </div>
 
         {/* Bottom Section */}
         <div className="border-t border-gray-600 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-300">
-              © 2024 Dhana's Home Food. Made with ❤️ for authentic food lovers.
+              © 2024 Dhana's Home Food — Home-style South Indian take-away in Avadi.
             </div>
             
-            <div className="flex items-center space-x-4 text-xs text-gray-300">
-              <span>🌿 Fresh & Natural</span>
-              <span>•</span>
-              <span>🔥 Customizable Spice</span>
-              <span>•</span>
-              <span>📱 Easy Ordering</span>
+            <div className="flex flex-wrap items-center gap-2 text-xs text-gray-300">
+              <span className="px-2 py-1 rounded-full bg-white/10">🌿 Fresh & Natural</span>
+              <span className="px-2 py-1 rounded-full bg-white/10">🔥 Custom Spice</span>
+              <span className="px-2 py-1 rounded-full bg-white/10">📱 WhatsApp Ordering</span>
             </div>
           </div>
         </div>

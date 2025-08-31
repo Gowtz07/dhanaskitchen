@@ -1,10 +1,22 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { CartItem, Dish } from '@/types/menu';
 import { toast } from '@/hooks/use-toast';
 
 export const useCart = () => {
-  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [cartItems, setCartItems] = useState<CartItem[]>(() => {
+    try {
+      const saved = localStorage.getItem('dhana_cart_v1');
+      return saved ? (JSON.parse(saved) as CartItem[]) : [];
+    } catch {
+      return [];
+    }
+  });
 
+  useEffect(() => {
+    try {
+      localStorage.setItem('dhana_cart_v1', JSON.stringify(cartItems));
+    } catch {}
+  }, [cartItems]);
   const addToCart = useCallback((dish: Dish, quantity: number, spiceLevel: number) => {
     setCartItems(prev => {
       const existingItemIndex = prev.findIndex(

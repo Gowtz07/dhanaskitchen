@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Phone, MapPin, ShoppingCart, Clock } from 'lucide-react';
+import { Phone, MapPin, ShoppingCart, Clock, UtensilsCrossed } from 'lucide-react';
 
 interface HeaderProps {
   cartItemCount: number;
@@ -14,8 +14,8 @@ export const Header = ({ cartItemCount, onCartClick }: HeaderProps) => {
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-warm rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">D</span>
+            <div className="w-10 h-10 rounded-full bg-gradient-warm shadow-warm flex items-center justify-center">
+              <UtensilsCrossed className="h-5 w-5 text-white" aria-label="Kitchen utensils logo" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground">Dhana's Home Food</h1>
