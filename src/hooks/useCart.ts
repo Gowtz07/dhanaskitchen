@@ -29,12 +29,14 @@ export const useCart = () => {
         toast({
           title: "Updated cart",
           description: `${dish.name} quantity updated`,
+          duration: 2000,
         });
         return newItems;
       } else {
         toast({
           title: "Added to cart",
           description: `${dish.name} added successfully`,
+          duration: 2000,
         });
         return [...prev, { dish, selectedQuantity: quantity, selectedSpiceLevel: spiceLevel }];
       }
@@ -47,6 +49,7 @@ export const useCart = () => {
       toast({
         title: "Removed from cart",
         description: `${item.dish.name} removed`,
+        duration: 2000,
       });
       return prev.filter((_, index) => index !== itemIndex);
     });
@@ -78,6 +81,7 @@ export const useCart = () => {
     toast({
       title: "Cart cleared",
       description: "All items removed from cart",
+      duration: 2000,
     });
   }, []);
 

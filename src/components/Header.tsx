@@ -10,7 +10,7 @@ interface HeaderProps {
 export const Header = ({ cartItemCount, onCartClick }: HeaderProps) => {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
           <div className="flex items-center space-x-3">
@@ -63,7 +63,7 @@ export const Header = ({ cartItemCount, onCartClick }: HeaderProps) => {
         </div>
 
         {/* Mobile Info */}
-        <div className="md:hidden flex items-center justify-center space-x-4 mt-3 pt-3 border-t border-border/50">
+        <div className="md:hidden flex items-center justify-center space-x-4 mt-2 pt-2 border-t border-border/50">
           <div className="flex items-center space-x-1 text-xs">
             <MapPin className="h-3 w-3 text-fresh-green" />
             <span className="text-muted-foreground">Avadi</span>

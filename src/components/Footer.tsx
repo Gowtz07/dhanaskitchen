@@ -91,7 +91,7 @@ export const Footer = () => {
         <div className="border-t border-gray-600 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-300">
-              © 2024 Dhana's Home Food — Home-style South Indian take-away in Avadi.
+              © 2025 Dhana's Home Food — Home-style South Indian take-away in Avadi.
             </div>
             
             <div className="flex flex-wrap items-center gap-2 text-xs text-gray-300">
