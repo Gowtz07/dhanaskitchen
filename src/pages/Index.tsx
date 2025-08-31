@@ -5,6 +5,7 @@ import { MenuSection } from '@/components/MenuSection';
 import { CartSheet } from '@/components/CartSheet';
 import { DishDetailsModal } from '@/components/DishDetailsModal';
 import { Footer } from '@/components/Footer';
+import { LoadingScreen } from '@/components/LoadingScreen';
 import { useCart } from '@/hooks/useCart';
 import { Dish } from '@/types/menu';
 
@@ -38,6 +39,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Loading Screen */}
+      <LoadingScreen />
+      
       {/* Header */}
       <Header 
         cartItemCount={getTotalItems()}

@@ -4,7 +4,7 @@ export const menuData: Dish[] = [
   {
     id: 'lemon-rice',
     name: 'Lemon Rice',
-    price: 160,
+    price: 80,
     quantity: '750 ML',
     maxQuantity: 'AS PER REQUIREMENT(MAX 750 ML)',
     spiceLevel: 3,
@@ -14,18 +14,18 @@ export const menuData: Dish[] = [
   },
   {
     id: 'veg-biryani',
-    name: 'Veg Biryani',
-    price: 180,
+    name: 'Veg/Paneer/Mushroom Biryani',
+    price: 150,
     quantity: '750 ML',
     spiceLevel: 4,
     ingredients: 'with onion and chillies',
     category: 'Rice Varieties',
-    description: 'Fragrant basmati rice cooked with mixed vegetables and aromatic spices'
+    description: 'Fragrant basmati rice cooked with vegetables/paneer/mushroom and aromatic spices'
   },
   {
     id: 'curd-rice',
     name: 'Curd Rice',
-    price: 250,
+    price: 80,
     quantity: '750 ML',
     spiceLevel: 2,
     ingredients: 'Soft cooked rice with creamy curd',
@@ -35,7 +35,7 @@ export const menuData: Dish[] = [
   {
     id: 'tomato-rice',
     name: 'Tomato Rice',
-    price: 150,
+    price: 80,
     quantity: '750 ML',
     spiceLevel: 4,
     ingredients: 'Juicy Tomatoes with onion and chilli powder, cooked rice',
@@ -45,7 +45,7 @@ export const menuData: Dish[] = [
   {
     id: 'vatha-kozhambu',
     name: 'Vatha Kozhambu',
-    price: 210,
+    price: 100,
     quantity: '450 ML',
     spiceLevel: 4,
     ingredients: 'small onion, Tomatoes, garlic with Tamarind Pulp with some spices',
@@ -55,7 +55,7 @@ export const menuData: Dish[] = [
   {
     id: 'bisibelabath',
     name: 'Bisibelabath',
-    price: 150,
+    price: 80,
     quantity: '750 ML',
     spiceLevel: 3,
     ingredients: 'Rice, Dal, veggies, ghee',
@@ -65,7 +65,7 @@ export const menuData: Dish[] = [
   {
     id: 'kootu',
     name: 'Kootu (Veggies)',
-    price: 160,
+    price: 70,
     quantity: '450ML',
     spiceLevel: 2,
     ingredients: 'Soft cooked moong dal with any veggies',
@@ -75,7 +75,7 @@ export const menuData: Dish[] = [
   {
     id: 'poriyal',
     name: 'Poriyal (Veggies)',
-    price: 170,
+    price: 88,
     quantity: '450ML',
     spiceLevel: 3,
     ingredients: 'Carrot, beans, Cabbage, Chow chow, Beetroot if any veggies - Cooked with some spices',
@@ -85,7 +85,7 @@ export const menuData: Dish[] = [
   {
     id: 'varuval',
     name: 'Varuval (Veggies)',
-    price: 180,
+    price: 80,
     quantity: '450ML',
     spiceLevel: 4,
     ingredients: 'Potato, Vazhaikai, Senai kizhghu - if any requires Cooked with deep fry with chilli, pepper powder',
@@ -95,7 +95,7 @@ export const menuData: Dish[] = [
   {
     id: 'white-rice',
     name: 'White Rice',
-    price: 85,
+    price: 60,
     quantity: '750 ML',
     spiceLevel: 1,
     ingredients: 'Steamed rice',
@@ -105,7 +105,7 @@ export const menuData: Dish[] = [
   {
     id: 'sambhar',
     name: 'Sambhar',
-    price: 150,
+    price: 65,
     quantity: '450 ML',
     spiceLevel: 3,
     ingredients: 'Toor dal with mix veg, sambar powder',
@@ -115,7 +115,7 @@ export const menuData: Dish[] = [
   {
     id: 'rasam',
     name: 'Rasam',
-    price: 110,
+    price: 55,
     quantity: '450 ML',
     spiceLevel: 4,
     ingredients: 'Tomatoes, tamarind pulp, crushed garlic, pepper, jeera powder',
@@ -125,7 +125,7 @@ export const menuData: Dish[] = [
   {
     id: 'mor-kozlambu',
     name: 'Mor Kozlambu',
-    price: 190,
+    price: 90,
     quantity: '450 ML',
     spiceLevel: 4,
     ingredients: 'Ginger, grated Coconut, green chillies, spices',
@@ -135,7 +135,7 @@ export const menuData: Dish[] = [
   {
     id: 'idly-sambhar',
     name: 'Idly + Sambhar',
-    price: 120,
+    price: 80,
     quantity: '6 nos',
     spiceLevel: 5,
     ingredients: 'Steamed soft rice balls with spicy chilli chutney',
@@ -145,7 +145,7 @@ export const menuData: Dish[] = [
   {
     id: 'dosa-chutney',
     name: 'Dosa + Chutney',
-    price: 150,
+    price: 80,
     quantity: '4 nos',
     spiceLevel: 4,
     ingredients: 'Rice, urid dal, fenugreek with coconut, chilli chutney',
@@ -155,7 +155,7 @@ export const menuData: Dish[] = [
   {
     id: 'chapathi-kurma',
     name: 'Chapathi + Veg Kurma',
-    price: 140,
+    price: 75,
     quantity: '4 nos',
     spiceLevel: 4,
     ingredients: 'Wheat flavour with salt, fresh veggies with spices',
@@ -165,7 +165,7 @@ export const menuData: Dish[] = [
   {
     id: 'poori-potato',
     name: 'Poori + Potato',
-    price: 120,
+    price: 60,
     quantity: '4 nos',
     spiceLevel: 4,
     ingredients: 'wheat flavour, potato, onion, green chillies',
@@ -185,7 +185,7 @@ export const menuData: Dish[] = [
   {
     id: 'avial',
     name: 'Avial',
-    price: 175,
+    price: 90,
     quantity: '450 ML',
     spiceLevel: 3,
     ingredients: 'fresh veggies, coconut oil, pepper, jeera, green chillies',
@@ -195,7 +195,7 @@ export const menuData: Dish[] = [
   {
     id: 'sambarava-upma',
     name: 'Sambarava Upma',
-    price: 180,
+    price: 120,
     quantity: '750 ML',
     spiceLevel: 3,
     ingredients: 'broken wheat rava, onion, chilli, ginger, oil',
@@ -205,8 +205,8 @@ export const menuData: Dish[] = [
   {
     id: 'pongal-chutney',
     name: 'Pongal + Chutney, Sambar',
-    price: 200,
-    quantity: '750ml',
+    price: 80,
+    quantity: '450ml',
     spiceLevel: 3,
     ingredients: 'moong dal, raw rice with pepper and jeera ghee, ginger',
     category: 'Breakfast',
