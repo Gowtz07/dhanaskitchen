@@ -12,9 +12,10 @@ interface MenuCardProps {
   onAddToCart: (dish: Dish, quantity: number, spiceLevel: number) => void;
   onViewDetails: (dish: Dish) => void;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export const MenuCard = ({ dish, onAddToCart, onViewDetails, className }: MenuCardProps) => {
+export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }: MenuCardProps) => {
   const [selectedSpiceLevel, setSelectedSpiceLevel] = useState(dish.spiceLevel);
 
   const handleAddToCart = () => {
@@ -26,11 +27,15 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className }: MenuCa
     : parseInt(dish.quantity.split(' ')[0]);
 
   return (
-    <Card className={cn(
-      "group overflow-hidden hover:shadow-card transition-smooth cursor-pointer",
-      "border-border/50 hover:border-saffron/30",
-      className
-    )}>
+    <Card 
+      className={cn(
+        "group overflow-hidden hover:shadow-card transition-smooth cursor-pointer",
+        "border-border/50 hover:border-saffron/30 bg-gradient-card",
+        "hover:scale-[1.02] transform-gpu",
+        className
+      )}
+      style={style}
+    >
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between">
           <CardTitle className="text-lg leading-tight group-hover:text-saffron transition-smooth">
@@ -61,7 +66,8 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className }: MenuCa
               dish.category === 'Gravies' && "border-fresh-green/30 text-fresh-green",
               dish.category === 'Side Dishes' && "border-accent/50 text-accent-foreground",
               dish.category === 'Breakfast' && "border-primary/30 text-primary",
-              dish.category === 'Complete Meals' && "border-destructive/30 text-destructive"
+              dish.category === 'Complete Meals' && "border-destructive/30 text-destructive",
+              dish.category === 'Others' && "border-accent-purple/40 text-accent-purple"
             )}
           >
             {dish.category}

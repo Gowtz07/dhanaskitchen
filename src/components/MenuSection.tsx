@@ -88,13 +88,16 @@ export const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ onAddToC
 
         {/* Menu Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredDishes.map((dish) => (
+          {filteredDishes.map((dish, index) => (
             <MenuCard
               key={dish.id}
               dish={dish}
               onAddToCart={onAddToCart}
               onViewDetails={onViewDetails}
-              className="hover:scale-[1.02] transition-smooth"
+              className="hover:scale-[1.02] transition-smooth animate-fade-in"
+              style={{
+                animationDelay: `${index * 0.1}s`
+              }}
             />
           ))}
         </div>

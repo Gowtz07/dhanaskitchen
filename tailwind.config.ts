@@ -35,6 +35,10 @@ export default {
 				},
 				'warm-brown': 'hsl(var(--warm-brown))',
 				cream: 'hsl(var(--cream))',
+				'accent-orange': 'hsl(var(--accent-orange))',
+				'accent-red': 'hsl(var(--accent-red))',
+				'accent-yellow': 'hsl(var(--accent-yellow))',
+				'accent-purple': 'hsl(var(--accent-purple))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -95,18 +99,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 3s ease-in-out infinite',
-				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'fade-in': 'fade-in 0.5s ease-out forwards'
 			},
 			backgroundImage: {
 				'gradient-warm': 'var(--gradient-warm)',
 				'gradient-fresh': 'var(--gradient-fresh)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-unique': 'var(--gradient-unique)'
 			},
 			boxShadow: {
 				'warm': 'var(--shadow-warm)',

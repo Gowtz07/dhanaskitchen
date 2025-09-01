@@ -25,7 +25,7 @@ export const HeroSection = ({ onOrderNow }: HeroSectionProps) => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Authentic{' '}
-            <span className="bg-gradient-warm bg-clip-text text-transparent">
+            <span className="bg-gradient-unique bg-clip-text text-transparent animate-pulse">
               South Indian
             </span>{' '}
             Flavors
@@ -59,7 +59,7 @@ export const HeroSection = ({ onOrderNow }: HeroSectionProps) => {
               onClick={onOrderNow}
               variant="saffron"
               size="lg"
-              className="text-lg px-8 py-6 min-w-[200px]"
+              className="text-lg px-8 py-6 min-w-[200px] bg-gradient-accent hover:scale-105 transform transition-smooth shadow-warm"
             >
               Order Now
               <ArrowDown className="h-5 w-5 ml-2 animate-bounce" />

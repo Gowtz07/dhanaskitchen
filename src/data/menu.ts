@@ -211,6 +211,66 @@ export const menuData: Dish[] = [
     ingredients: 'moong dal, raw rice with pepper and jeera ghee, ginger',
     category: 'Breakfast',
     description: 'Traditional rice and lentil dish with ghee and spices'
+  },
+  {
+    id: 'pirandai-thokku',
+    name: 'Pirandai Thokku',
+    price: 35,
+    quantity: '100ml',
+    spiceLevel: 4,
+    ingredients: 'Pirandai (Adamant creeper), spices, oil',
+    category: 'Others',
+    description: 'Traditional medicinal chutney made from pirandai'
+  },
+  {
+    id: 'garlic-pickle',
+    name: 'Garlic Pickle',
+    price: 40,
+    quantity: '100gm',
+    spiceLevel: 4,
+    ingredients: 'Garlic, oil, spices, salt',
+    category: 'Others',
+    description: 'Spicy and flavorful garlic pickle'
+  },
+  {
+    id: 'murugaikeerai-salt',
+    name: 'Murugaikeerai Salt',
+    price: 30,
+    quantity: '100gm',
+    spiceLevel: 2,
+    ingredients: 'Drumstick leaves, salt, spices',
+    category: 'Others',
+    description: 'Nutritious drumstick leaves powder with salt'
+  },
+  {
+    id: 'mudaathan-rice-batter',
+    name: 'Mudaathan Rice Batter',
+    price: 65,
+    quantity: '450ml',
+    spiceLevel: 1,
+    ingredients: 'Mudaathan rice, water',
+    category: 'Others',
+    description: 'Traditional fermented rice batter'
+  },
+  {
+    id: 'vallari-keerai-paruppu-podi',
+    name: 'Vallari Keerai Paruppu Podi',
+    price: 40,
+    quantity: '100gm',
+    spiceLevel: 3,
+    ingredients: 'Vallari keerai, dal, spices',
+    category: 'Others',
+    description: 'Healthy greens and lentil powder mix'
+  },
+  {
+    id: 'poondu-paruppu-podi',
+    name: 'Poondu Paruppu Podi',
+    price: 55,
+    quantity: '100gm',
+    spiceLevel: 4,
+    ingredients: 'Garlic, dal, red chili, spices',
+    category: 'Others',
+    description: 'Aromatic garlic and lentil powder blend'
   }
 ];
 
@@ -220,5 +280,6 @@ export const categories = [
   'Gravies', 
   'Side Dishes',
   'Breakfast',
-  'Complete Meals'
+  'Complete Meals',
+  'Others'
 ];
