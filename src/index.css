@@ -6,69 +6,77 @@
 All colors MUST be HSL.
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @layer base {
   :root {
-    --background: 50 20% 97%;
-    --foreground: 25 20% 15%;
+    --background: 15 8% 8%;
+    --foreground: 45 25% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 25 20% 15%;
+    --card: 20 10% 12%;
+    --card-foreground: 45 25% 92%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 25 20% 15%;
+    --popover: 20 10% 12%;
+    --popover-foreground: 45 25% 92%;
 
-    --primary: 25 85% 55%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 28 95% 58%;
+    --primary-foreground: 15 8% 8%;
 
-    --secondary: 120 30% 92%;
-    --secondary-foreground: 25 20% 15%;
+    --secondary: 25 20% 18%;
+    --secondary-foreground: 45 25% 88%;
 
-    --muted: 45 25% 95%;
-    --muted-foreground: 25 15% 45%;
+    --muted: 25 15% 15%;
+    --muted-foreground: 45 15% 65%;
 
-    --accent: 120 40% 88%;
-    --accent-foreground: 25 20% 15%;
+    --accent: 35 85% 55%;
+    --accent-foreground: 15 8% 8%;
 
-    --destructive: 0 70% 55%;
+    --destructive: 0 85% 65%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 20% 88%;
-    --input: 45 20% 92%;
-    --ring: 25 85% 55%;
+    --border: 25 15% 22%;
+    --input: 25 15% 18%;
+    --ring: 28 95% 58%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Custom food theme colors */
-    --saffron: 25 85% 55%;
-    --saffron-light: 25 70% 85%;
-    --saffron-dark: 25 90% 45%;
+    /* Premium food theme colors */
+    --saffron: 38 92% 60%;
+    --saffron-light: 42 88% 78%;
+    --saffron-dark: 32 95% 48%;
     
-    --fresh-green: 120 40% 50%;
-    --fresh-green-light: 120 30% 85%;
+    --fresh-green: 158 64% 52%;
+    --fresh-green-light: 158 45% 75%;
     
-    --warm-brown: 25 35% 25%;
-    --cream: 45 40% 95%;
+    --warm-brown: 25 45% 35%;
+    --cream: 45 85% 95%;
     
-    --accent-orange: 24 100% 50%;
-    --accent-red: 0 84% 60%;
-    --accent-yellow: 48 100% 67%;
-    --accent-purple: 270 60% 65%;
+    --gold: 48 100% 67%;
+    --copper: 15 75% 45%;
+    --emerald: 160 84% 39%;
+    --ruby: 348 83% 47%;
+    --pearl: 210 20% 98%;
+    --charcoal: 210 11% 15%;
     
-    /* Gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--saffron-dark)));
-    --gradient-fresh: linear-gradient(135deg, hsl(var(--fresh-green)), hsl(var(--accent)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--saffron-light)), hsl(var(--cream)));
+    /* Premium gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--saffron)) 0%, hsl(var(--copper)) 100%);
+    --gradient-fresh: linear-gradient(135deg, hsl(var(--emerald)) 0%, hsl(var(--fresh-green)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--charcoal)) 0%, hsl(var(--warm-brown)) 50%, hsl(var(--saffron-dark)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
-    --gradient-accent: linear-gradient(45deg, hsl(var(--accent-orange)) 0%, hsl(var(--accent-red)) 50%, hsl(var(--accent-yellow)) 100%);
-    --gradient-unique: linear-gradient(135deg, hsl(var(--accent-purple)) 0%, hsl(var(--saffron)) 100%);
+    --gradient-accent: linear-gradient(45deg, hsl(var(--gold)) 0%, hsl(var(--saffron)) 50%, hsl(var(--ruby)) 100%);
+    --gradient-unique: linear-gradient(135deg, hsl(var(--ruby)) 0%, hsl(var(--saffron)) 50%, hsl(var(--gold)) 100%);
+    --gradient-luxury: linear-gradient(120deg, hsl(var(--pearl)) 0%, hsl(var(--gold)) 50%, hsl(var(--copper)) 100%);
     
-    /* Shadows */
-    --shadow-warm: 0 10px 30px -10px hsl(var(--saffron) / 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(var(--warm-brown) / 0.1);
+    /* Premium shadows */
+    --shadow-warm: 0 25px 50px -12px hsl(var(--saffron) / 0.25);
+    --shadow-card: 0 8px 32px -8px hsl(var(--charcoal) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--saffron) / 0.4);
+    --shadow-luxury: 0 20px 40px -12px hsl(var(--gold) / 0.3);
     
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Premium animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-luxury: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
 
@@ -132,6 +140,25 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: "cv11", "ss01";
+    font-variation-settings: "opsz" 32;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+    font-feature-settings: "ss01", "ss02";
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    @apply backdrop-blur-xl bg-background/10 border border-border/20;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+  
+  .premium-glow {
+    @apply shadow-glow;
+    filter: drop-shadow(0 0 20px hsl(var(--saffron) / 0.3));
   }
 }

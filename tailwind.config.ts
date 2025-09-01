@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -35,10 +39,12 @@ export default {
 				},
 				'warm-brown': 'hsl(var(--warm-brown))',
 				cream: 'hsl(var(--cream))',
-				'accent-orange': 'hsl(var(--accent-orange))',
-				'accent-red': 'hsl(var(--accent-red))',
-				'accent-yellow': 'hsl(var(--accent-yellow))',
-				'accent-purple': 'hsl(var(--accent-purple))',
+				gold: 'hsl(var(--gold))',
+				copper: 'hsl(var(--copper))',
+				emerald: 'hsl(var(--emerald))',
+				ruby: 'hsl(var(--ruby))',
+				pearl: 'hsl(var(--pearl))',
+				charcoal: 'hsl(var(--charcoal))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -124,15 +130,19 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-unique': 'var(--gradient-unique)'
+				'gradient-unique': 'var(--gradient-unique)',
+				'gradient-luxury': 'var(--gradient-luxury)'
 			},
 			boxShadow: {
 				'warm': 'var(--shadow-warm)',
-				'card': 'var(--shadow-card)'
+				'card': 'var(--shadow-card)',
+				'glow': 'var(--shadow-glow)',
+				'luxury': 'var(--shadow-luxury)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',
-				'bounce': 'var(--transition-bounce)'
+				'bounce': 'var(--transition-bounce)',
+				'luxury': 'var(--transition-luxury)'
 			}
 		}
 	},

@@ -29,16 +29,18 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }:
   return (
     <Card 
       className={cn(
-        "group overflow-hidden hover:shadow-card transition-smooth cursor-pointer",
-        "border-border/50 hover:border-saffron/30 bg-gradient-card",
-        "hover:scale-[1.02] transform-gpu",
+        "group overflow-hidden hover:shadow-luxury transition-luxury cursor-pointer",
+        "border border-border/30 hover:border-gold/40 glass-morphism",
+        "hover:scale-[1.03] transform-gpu hover:-translate-y-1",
+        "backdrop-blur-sm bg-card/50",
         className
       )}
       style={style}
     >
-      <CardHeader className="pb-3">
-        <div className="flex items-start justify-between">
-          <CardTitle className="text-lg leading-tight group-hover:text-saffron transition-smooth">
+      <CardHeader className="pb-3 relative">
+        <div className="absolute inset-0 bg-gradient-luxury opacity-5 rounded-t-lg"></div>
+        <div className="flex items-start justify-between relative z-10">
+          <CardTitle className="text-lg leading-tight group-hover:text-gold transition-luxury font-playfair">
             {dish.name}
           </CardTitle>
           <Button
@@ -61,13 +63,13 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }:
           <Badge 
             variant="outline" 
             className={cn(
-              "text-xs",
-              dish.category === 'Rice Varieties' && "border-saffron/30 text-saffron",
-              dish.category === 'Gravies' && "border-fresh-green/30 text-fresh-green",
-              dish.category === 'Side Dishes' && "border-accent/50 text-accent-foreground",
-              dish.category === 'Breakfast' && "border-primary/30 text-primary",
-              dish.category === 'Complete Meals' && "border-destructive/30 text-destructive",
-              dish.category === 'Others' && "border-accent-purple/40 text-accent-purple"
+              "text-xs font-medium",
+              dish.category === 'Rice Varieties' && "border-gold/40 text-gold bg-gold/10",
+              dish.category === 'Gravies' && "border-emerald/40 text-emerald bg-emerald/10",
+              dish.category === 'Side Dishes' && "border-copper/40 text-copper bg-copper/10",
+              dish.category === 'Breakfast' && "border-ruby/40 text-ruby bg-ruby/10",
+              dish.category === 'Complete Meals' && "border-saffron/40 text-saffron bg-saffron/10",
+              dish.category === 'Others' && "border-pearl/40 text-pearl bg-pearl/10"
             )}
           >
             {dish.category}
@@ -91,15 +93,14 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }:
 
       <CardFooter className="pt-3 border-t border-border/50">
         <div className="flex items-center justify-between w-full">
-          <div className="text-xl font-bold text-saffron">
+          <div className="text-2xl font-bold bg-gradient-luxury bg-clip-text text-transparent">
             ₹{dish.price}
           </div>
           
           <Button
             onClick={handleAddToCart}
-            variant="order"
             size="sm"
-            className="min-w-[100px]"
+            className="min-w-[100px] bg-gradient-accent hover:bg-gradient-luxury text-charcoal font-semibold hover:scale-105 transform transition-luxury shadow-warm"
           >
             <Plus className="h-4 w-4" />
             Add

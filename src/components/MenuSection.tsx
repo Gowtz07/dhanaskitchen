@@ -38,16 +38,16 @@ export const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ onAddToC
   }, [selectedCategory, searchQuery]);
 
   return (
-    <section ref={ref} className="py-16 bg-gradient-to-b from-background to-cream/30" id="menu">
+    <section ref={ref} className="py-20 bg-gradient-to-b from-background via-background/95 to-card/30" id="menu">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="text-saffron">Traditional</span> Menu
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 font-playfair">
+            Our <span className="bg-gradient-luxury bg-clip-text text-transparent">Traditional</span> Menu
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-inter leading-relaxed">
             Discover authentic South Indian flavors, crafted with love and traditional recipes 
-            passed down through generations.
+            passed down through generations. Each dish tells a story of heritage and taste.
           </p>
         </div>
 
