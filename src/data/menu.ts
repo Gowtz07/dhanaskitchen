@@ -271,6 +271,26 @@ export const menuData: Dish[] = [
     ingredients: 'Garlic, dal, red chili, spices',
     category: 'Others',
     description: 'Aromatic garlic and lentil powder blend'
+  },
+  {
+    id: 'mudavatukal-soup-mix',
+    name: 'Mudavatukal Soup Mix',
+    price: 150,
+    quantity: '100gm',
+    spiceLevel: 2,
+    ingredients: 'Mixed herbs, spices, natural ingredients',
+    category: 'Others',
+    description: 'Traditional herbal soup mix for health and wellness'
+  },
+  {
+    id: 'abc-health-mix',
+    name: 'ABC Health Mix',
+    price: 200,
+    quantity: '100gm',
+    spiceLevel: 1,
+    ingredients: 'Multi-grain blend, nuts, natural ingredients',
+    category: 'Others',
+    description: 'Nutritious health mix packed with essential nutrients'
   }
 ];
 
