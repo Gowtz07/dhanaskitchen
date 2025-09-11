@@ -45,7 +45,7 @@ export const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ onAddToC
         <div className="text-center mb-16">
           {/* Special Offer Banner */}
           <div className="bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white py-3 px-6 rounded-lg mb-8 animate-pulse shadow-2xl">
-            <p className="font-bold text-lg">🔥 LIMITED TIME: FREE DELIVERY on orders above ₹300! 🔥</p>
+            <p className="font-bold text-lg">🔥 LIMITED TIME: Special Combo Offers Available! 🔥</p>
           </div>
           
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 font-playfair">
@@ -59,8 +59,7 @@ export const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ onAddToC
           {/* Trust Badges */}
           <div className="flex justify-center gap-4 mt-6 flex-wrap">
             <Badge className="bg-green-500 text-white">✅ Fresh Daily</Badge>
-            <Badge className="bg-blue-500 text-white">🏆 Award Winning</Badge>
-            <Badge className="bg-purple-500 text-white">⚡ Fast Delivery</Badge>
+            <Badge className="bg-purple-500 text-white">⚡ Quick Takeaway</Badge>
             <Badge className="bg-orange-500 text-white">💯 100% Authentic</Badge>
           </div>
         </div>

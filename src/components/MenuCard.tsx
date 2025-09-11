@@ -112,17 +112,6 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }:
             {dish.description || dish.ingredients}
           </p>
 
-          {/* Urgency & Social Proof */}
-          <div className="flex items-center justify-between text-xs">
-            <span className="text-orange-500 font-medium flex items-center gap-1">
-              <Clock className="h-3 w-3" />
-              Only {stockLeft} left!
-            </span>
-            <span className="text-green-500 font-medium">
-              ⭐ {(4.2 + Math.random() * 0.7).toFixed(1)} ({Math.floor(Math.random() * 50) + 15} reviews)
-            </span>
-          </div>
-
           <SpiceLevel
             level={selectedSpiceLevel}
             onChange={setSelectedSpiceLevel}
@@ -137,9 +126,9 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }:
             <div className="text-2xl font-bold bg-gradient-luxury bg-clip-text text-transparent">
               ₹{dish.price}
             </div>
-            {hasSpecialOffer && (
+            {dish.price > 100 && (
               <div className="text-xs text-muted-foreground line-through">
-                ₹{Math.floor(dish.price * 1.15)}
+                ₹{Math.floor(dish.price * 1.2)}
               </div>
             )}
           </div>
@@ -150,7 +139,7 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }:
             className="min-w-[120px] bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 text-white font-bold hover:scale-105 transform transition-luxury shadow-warm animate-pulse hover:animate-none"
           >
             <Plus className="h-4 w-4 mr-1" />
-            {isLimited ? 'GRAB NOW!' : hasSpecialOffer ? 'ORDER NOW!' : 'ADD TO CART'}
+            {isLimited ? 'GRAB NOW!' : dish.price > 100 ? 'ORDER NOW!' : 'ADD TO CART'}
           </Button>
         </div>
       </CardFooter>
