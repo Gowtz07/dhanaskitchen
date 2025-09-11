@@ -52,7 +52,7 @@ export const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ onAddToC
             Our <span className="bg-gradient-luxury bg-clip-text text-transparent">Traditional</span> Menu
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-inter leading-relaxed">
-            ⭐ <strong>1000+ Happy Customers Daily!</strong> Discover authentic South Indian flavors, crafted with love and traditional recipes 
+            ⭐ <strong>Happy Customers Daily!</strong> Discover authentic South Indian flavors, crafted with love and traditional recipes 
             passed down through generations. Each dish tells a story of heritage and taste.
           </p>
           
