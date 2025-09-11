@@ -276,7 +276,7 @@ export const menuData: Dish[] = [
     id: 'mudavatukal-soup-mix',
     name: 'Mudavatukal Soup Mix',
     price: 150,
-    quantity: '100gm',
+    quantity: '50g',
     spiceLevel: 2,
     ingredients: 'Mixed herbs, spices, natural ingredients',
     category: 'Others',
