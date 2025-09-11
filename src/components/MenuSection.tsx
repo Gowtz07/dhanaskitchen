@@ -1,6 +1,7 @@
 import { useState, useMemo, forwardRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Badge } from '@/components/ui/badge';
 import { MenuCard } from '@/components/MenuCard';
 import { Search, Filter } from 'lucide-react';
 import { Dish } from '@/types/menu';
@@ -42,13 +43,26 @@ export const MenuSection = forwardRef<HTMLElement, MenuSectionProps>(({ onAddToC
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
+          {/* Special Offer Banner */}
+          <div className="bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white py-3 px-6 rounded-lg mb-8 animate-pulse shadow-2xl">
+            <p className="font-bold text-lg">🔥 LIMITED TIME: FREE DELIVERY on orders above ₹300! 🔥</p>
+          </div>
+          
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 font-playfair">
             Our <span className="bg-gradient-luxury bg-clip-text text-transparent">Traditional</span> Menu
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-inter leading-relaxed">
-            Discover authentic South Indian flavors, crafted with love and traditional recipes 
+            ⭐ <strong>1000+ Happy Customers Daily!</strong> Discover authentic South Indian flavors, crafted with love and traditional recipes 
             passed down through generations. Each dish tells a story of heritage and taste.
           </p>
+          
+          {/* Trust Badges */}
+          <div className="flex justify-center gap-4 mt-6 flex-wrap">
+            <Badge className="bg-green-500 text-white">✅ Fresh Daily</Badge>
+            <Badge className="bg-blue-500 text-white">🏆 Award Winning</Badge>
+            <Badge className="bg-purple-500 text-white">⚡ Fast Delivery</Badge>
+            <Badge className="bg-orange-500 text-white">💯 100% Authentic</Badge>
+          </div>
         </div>
 
         {/* Search and Filter */}
