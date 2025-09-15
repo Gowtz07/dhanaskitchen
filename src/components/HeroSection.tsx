@@ -16,8 +16,8 @@ export const HeroSection = ({ onOrderNow }: HeroSectionProps) => {
           alt="Traditional South Indian food spread"
           className="w-full h-full object-cover scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-hero opacity-95" />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-hero opacity-60" />
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       {/* Content */}
