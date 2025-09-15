@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Star, Clock, MapPin } from 'lucide-react';
-import heroImage from '@/assets/hero-food.jpg';
+import heroImage from '@/assets/home-food-hero.jpg';
 
 interface HeroSectionProps {
   onOrderNow: () => void;
