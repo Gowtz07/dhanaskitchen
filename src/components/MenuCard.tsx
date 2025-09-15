@@ -55,7 +55,7 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }:
             </Badge>
           )}
           {isLimited && (
-            <Badge className="bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold text-xs animate-bounce shadow-lg">
+            <Badge className="bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold text-xs shadow-lg">
               <Flame className="h-3 w-3 mr-1" />
               LIMITED
             </Badge>
@@ -136,7 +136,7 @@ export const MenuCard = ({ dish, onAddToCart, onViewDetails, className, style }:
           <Button
             onClick={handleAddToCart}
             size="sm"
-            className="min-w-[120px] bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 text-white font-bold hover:scale-105 transform transition-luxury shadow-warm animate-pulse hover:animate-none"
+            className="min-w-[120px] bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 text-white font-bold hover:scale-105 transform transition-luxury shadow-warm"
           >
             <Plus className="h-4 w-4 mr-1" />
             {isLimited ? 'GRAB NOW!' : dish.price > 100 ? 'ORDER NOW!' : 'ADD TO CART'}

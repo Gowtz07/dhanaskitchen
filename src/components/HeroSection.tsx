@@ -62,7 +62,7 @@ export const HeroSection = ({ onOrderNow }: HeroSectionProps) => {
               className="text-lg px-10 py-6 min-w-[220px] bg-gradient-luxury text-charcoal font-semibold hover:scale-105 transform transition-luxury shadow-luxury hover:shadow-glow border-2 border-gold/20"
             >
               Order Now
-              <ArrowDown className="h-5 w-5 ml-2 animate-bounce" />
+              <ArrowDown className="h-5 w-5 ml-2" />
             </Button>
             
             <Button
@@ -85,7 +85,7 @@ export const HeroSection = ({ onOrderNow }: HeroSectionProps) => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <ArrowDown className="h-6 w-6 text-pearl/70" />
       </div>
     </section>
