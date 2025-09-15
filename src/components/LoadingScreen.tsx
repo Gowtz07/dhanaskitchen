@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
 
-export const LoadingScreen = () => {
+export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
+      onLoadingComplete();
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [onLoadingComplete]);
 
   if (!isVisible) return null;
 

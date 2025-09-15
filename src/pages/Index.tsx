@@ -23,6 +23,7 @@ const Index = () => {
 
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [selectedDish, setSelectedDish] = useState<Dish | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
   const menuRef = useRef<HTMLElement>(null);
 
   const handleOrderNow = () => {
@@ -37,16 +38,22 @@ const Index = () => {
     setSelectedDish(null);
   };
 
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Loading Screen */}
-      <LoadingScreen />
+      <LoadingScreen onLoadingComplete={handleLoadingComplete} />
       
       {/* Header */}
-      <Header 
-        cartItemCount={getTotalItems()}
-        onCartClick={() => setIsCartOpen(true)}
-      />
+      {!isLoading && (
+        <Header 
+          cartItemCount={getTotalItems()}
+          onCartClick={() => setIsCartOpen(true)}
+        />
+      )}
 
       {/* Hero Section */}
       <HeroSection onOrderNow={handleOrderNow} />
