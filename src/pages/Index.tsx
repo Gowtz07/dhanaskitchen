@@ -72,12 +72,6 @@ const Index = () => {
       <CartSheet
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
-        cartItems={cartItems}
-        totalPrice={getTotalPrice()}
-        onUpdateQuantity={updateQuantity}
-        onUpdateSpiceLevel={updateSpiceLevel}
-        onRemoveItem={removeFromCart}
-        onClearCart={clearCart}
       />
 
       {/* Dish Details Modal */}
